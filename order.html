@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Order Online - The Napa's Kitchen</title>
+    <meta name="description" content="Order delicious Sri Lankan and fusion cuisine online from The Napa's Kitchen in Ragama.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Order Online - The Napa's Kitchen">
+    <meta property="og:description" content="Order authentic Sri Lankan and fusion cuisine online with home delivery.">
+    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:url" content="https://thenapaskitchen.com/order">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/jpeg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/order.css">
+
+    <!-- JavaScript -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+<body>
+    <!-- Pre-loader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navigation" class="navbar-order">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <div class="logo">
+                                        <img src="images/logo2.jpg" alt="Logo">
+                                    </div>
+                                </div>
+                                
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                                        <li class="active"><a href="order.html"><i class="fa fa-utensils"></i> Order Online</a></li>
+                                        <li>
+                                            <a href="#" id="cart-toggle" class="cart-link navbar-cart-link">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Cart <span id="cart-count" class="cart-count-badge">0</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Order Header -->
+    <section id="order-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="order-hero">
+                        <h1>Order <span>Online</span></h1>
+                        <p>Choose from our delicious menu and have it delivered to your doorstep</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb Navigation -->
+    <section id="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-nav">
+                        <a href="index.html" class="breadcrumb-link">
+                            <i class="fa fa-home"></i> Home
+                        </a>
+                        <span class="breadcrumb-separator">/</span>
+                        <span class="breadcrumb-current">Order Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section id="category-filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">All Items</button>
+                        <button class="filter-btn" data-category="burgers">Buns & Burgers</button>
+                        <button class="filter-btn" data-category="bites">Bites</button>
+                        <button class="filter-btn" data-category="noodles">Noodles & Pasta</button>
+                        <button class="filter-btn" data-category="rice">Rice & Kottu</button>
+                        <button class="filter-btn" data-category="lunch">Lunch Packs</button>
+                        <button class="filter-btn" data-category="beverages">Beverages & Desserts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="products-grid" class="products-grid">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button id="close-cart" class="close-cart">&times;</button>
+        </div>
+        <div class="cart-content">
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <div class="total-section">
+                    <div class="subtotal">
+                        <span>Subtotal: </span>
+                        <span id="cart-subtotal">Rs. 0</span>
+                    </div>
+                    <div class="delivery-fee">
+                        <span>Delivery: </span>
+                        <span>Rs. 200</span>
+                    </div>
+                    <div class="total">
+                        <strong>Total: <span id="cart-total">Rs. 200</span></strong>
+                    </div>
+                </div>
+                <button id="checkout-btn" class="checkout-btn" disabled>Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <!-- Floating Cart Button (for mobile/visibility) -->
+    <div id="floating-cart" class="floating-cart">
+        <button id="floating-cart-btn" class="floating-cart-btn">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="floating-cart-count" class="cart-badge hidden">0</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer-simple">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2025 The Napa's Kitchen. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/order.js"></script>
+    <script>
+        // Initialize the order page
+        window.addEventListener('load', function() {
+            document.getElementById('preloader').style.display = 'none';
+            console.log('Order page loaded');
+            console.log('Cart elements:', {
+                cartToggle: document.getElementById('cart-toggle'),
+                cartCount: document.getElementById('cart-count'),
+                cartSidebar: document.getElementById('cart-sidebar')
+            });
+        });
+        
+        // Initialize WOW animations
+        new WOW().init();
+        
+
+    </script>
+</body>
+</html>

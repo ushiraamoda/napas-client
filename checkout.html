@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkout - The Napa's Kitchen</title>
+    <meta name="description" content="Complete your order from The Napa's Kitchen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/jpeg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <!-- JavaScript -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Pre-loader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navigation" class="navbar-checkout">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <div class="logo">
+                                        <img src="images/logo2.jpg" alt="Logo">
+                                    </div>
+                                </div>
+                                
+                                <div class="navbar-right">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                                        <li><a href="order.html"><i class="fa fa-arrow-left"></i> Back to Menu</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <section id="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-nav">
+                        <a href="index.html" class="breadcrumb-link">
+                            <i class="fa fa-home"></i> Home
+                        </a>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="order.html" class="breadcrumb-link">
+                            <i class="fa fa-utensils"></i> Order Online
+                        </a>
+                        <span class="breadcrumb-separator">/</span>
+                        <span class="breadcrumb-current">Checkout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Content -->
+    <section id="checkout">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="checkout-header">
+                        <h1>Complete Your <span>Order</span></h1>
+                        <div class="checkout-steps">
+                            <div class="step active">
+                                <span class="step-number">1</span>
+                                <span class="step-text">Order Details</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <span class="step-text">Customer Info</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <span class="step-text">Confirmation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="checkout-form">
+                        <!-- Step 1: Order Review -->
+                        <div id="step-1" class="checkout-step active">
+                            <h3>Review Your Order</h3>
+                            <div id="order-items" class="order-items">
+                                <!-- Order items will be loaded here -->
+                            </div>
+                            <div class="step-navigation">
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">Continue to Customer Info</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Customer Information -->
+                        <div id="step-2" class="checkout-step">
+                            <h3>Customer Information</h3>
+                            <form id="customer-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="firstName">First Name *</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name *</label>
+                                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="077 123 4567 or +94 77 123 4567" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="address">Delivery Address *</label>
+                                    <textarea class="form-control" id="address" rows="3" placeholder="Enter your full delivery address" required></textarea>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="city">City *</label>
+                                            <input type="text" class="form-control" id="city" placeholder="e.g., Colombo, Kandy, Ragama" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="postalCode">Postal Code</label>
+                                            <input type="text" class="form-control" id="postalCode">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="orderNotes">Special Instructions (Optional)</label>
+                                    <textarea class="form-control" id="orderNotes" rows="3" placeholder="Any special requests or delivery instructions..."></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="deliveryTime">Preferred Delivery Time</label>
+                                    <select class="form-control" id="deliveryTime">
+                                        <option value="asap">As soon as possible (45-60 minutes)</option>
+                                        <option value="1hour">Within 1 hour</option>
+                                        <option value="2hours">Within 2 hours</option>
+                                        <option value="3hours">Within 3 hours</option>
+                                        <option value="custom">Custom time</option>
+                                    </select>
+                                </div>
+                                
+                                <div id="custom-time" class="form-group custom-time-hidden">
+                                    <label for="customDeliveryTime">Specify Time</label>
+                                    <input type="datetime-local" class="form-control" id="customDeliveryTime">
+                                </div>
+                            </form>
+                            
+                            <div class="step-navigation">
+                                <button type="button" class="btn btn-secondary" onclick="prevStep()">Back to Order</button>
+                                <button type="button" class="btn btn-primary" onclick="nextStep()">Review & Confirm</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Order Confirmation -->
+                        <div id="step-3" class="checkout-step">
+                            <h3>Order Confirmation</h3>
+                            <div class="confirmation-details">
+                                <div class="customer-info-summary">
+                                    <h4>Customer Information</h4>
+                                    <div id="customer-summary"></div>
+                                </div>
+                                
+                                <div class="order-summary-final">
+                                    <h4>Order Summary</h4>
+                                    <div id="final-order-items"></div>
+                                </div>
+                                
+                                <div class="payment-method">
+                                    <h4>Payment Method</h4>
+                                    <div class="payment-options">
+                                        <label class="payment-option">
+                                            <input type="radio" name="payment" value="cash" checked>
+                                            <span class="checkmark"></span>
+                                            Cash on Delivery
+                                        </label>
+                                        <label class="payment-option">
+                                            <input type="radio" name="payment" value="card" disabled>
+                                            <span class="checkmark"></span>
+                                            Credit/Debit Card (Coming Soon)
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="terms-conditions">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="terms" required>
+                                        <span class="checkmark"></span>
+                                        I agree to the <a href="#" target="_blank">Terms & Conditions</a>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="step-navigation">
+                                <button type="button" class="btn btn-secondary" onclick="prevStep()">Back to Info</button>
+                                <button type="button" class="btn btn-success" id="place-order-btn" onclick="placeOrder()">
+                                    <i class="fa fa-check"></i> Place Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div id="summary-items"></div>
+                        <div class="summary-totals">
+                            <div class="summary-line">
+                                <span>Subtotal:</span>
+                                <span id="summary-subtotal">Rs. 0</span>
+                            </div>
+                            <div class="summary-line">
+                                <span>Delivery Fee:</span>
+                                <span id="summary-delivery">Rs. 200</span>
+                            </div>
+                            <div class="summary-line total">
+                                <span>Total:</span>
+                                <span id="summary-total">Rs. 200</span>
+                            </div>
+                        </div>
+                        <div class="checkout-actions">
+                            <a href="order.html" class="btn btn-outline continue-shopping-btn">
+                                <i class="fa fa-arrow-left"></i> Continue Shopping
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Success Modal -->
+    <div id="success-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <i class="fa fa-check-circle success-icon"></i>
+                    <h2>Order Placed Successfully!</h2>
+                    <p>Thank you for your order. We'll start preparing your delicious meal right away.</p>
+                    <div class="order-details">
+                        <p><strong>Order ID:</strong> <span id="order-id"></span></p>
+                        <p><strong>Estimated Delivery:</strong> <span id="estimated-delivery"></span></p>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="index.html" class="btn btn-primary">Back to Home</a>
+                        <a href="order.html" class="btn btn-secondary">Order More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer-simple">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2025 The Napa's Kitchen. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/checkout.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById('preloader').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
