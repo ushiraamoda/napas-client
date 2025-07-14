@@ -9,7 +9,7 @@ const products = [
         description: "A spicy hotdog with jumbo chicken sausage dipped in BBQ sauce, salad dressing, mayo, sauce (ketchup)",
         price: 300,
         category: "burgers",
-        image: "images/490437887_1235698505118877_4546141424839669555_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_6.jpg"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const products = [
         description: "A 1 footlong grilled chicken with BBQ sauce submarine with cheese, egg, salad dressing, mayo & ketchup",
         price: 1000,
         category: "burgers",
-        image: "images/492247416_1245385630816831_2545052358866347327_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_15.jpg"
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ const products = [
         description: "A 1 footlong crispy chicken submarine with cheese, egg, salad dressing, mayo & ketchup",
         price: 1200,
         category: "burgers",
-        image: "images/493348953_1270178605004200_4998168804669485410_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_15.jpg"
     },
     {
         id: 4,
@@ -43,7 +43,7 @@ const products = [
         description: "Crispy french fries dusted with our special masala spice mix",
         price: 550,
         category: "bites",
-        image: "images/495570368_1257091479646246_1932760828936604358_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_13.jpg"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const products = [
         description: "Deep-fried cheese balls coated in crispy breadcrumbs",
         price: 800,
         category: "bites",
-        image: "images/498947072_1265321452156582_3828794308186300699_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_21.jpg"
     },
     {
         id: 7,
@@ -59,7 +59,7 @@ const products = [
         description: "Spicy chicken wings tossed in our signature hot sauce",
         price: 950,
         category: "bites",
-        image: "images/499008583_1265319558823438_8816504532566095577_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_17.jpg"
     },
     
     // Noodles & Pasta
@@ -69,7 +69,7 @@ const products = [
         description: "Thick noodles cooked with savory sauces, bell pepper, chicken, veggies for 01 person",
         price: 1500,
         category: "noodles",
-        image: "images/slider/slider-img-1.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_3.jpg"
     },
     {
         id: 9,
@@ -77,7 +77,7 @@ const products = [
         description: "Perfectly cooked spaghetti with chicken bologna for 01 person",
         price: 1000,
         category: "noodles",
-        image: "images/slider/slider-img-2.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_19.jpg"
     },
     {
         id: 10,
@@ -85,7 +85,7 @@ const products = [
         description: "Creamy macaroni and cheese with grilled chicken pieces",
         price: 1200,
         category: "noodles",
-        image: "images/slider/slider-img-3.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_5.jpg"
     },
     
     // Rice & Kottu
@@ -95,7 +95,7 @@ const products = [
         description: "01 person portion with chicken kottu & fried rice",
         price: 700,
         category: "rice",
-        image: "images/slider/slider-img-4.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14.jpg"
     },
     {
         id: 12,
@@ -103,7 +103,7 @@ const products = [
         description: "02 person 1kg portion with chicken kottu & fried rice",
         price: 1650,
         category: "rice",
-        image: "images/490426960_1236371781718216_7890033672047684204_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_7.jpg"
     },
     {
         id: 13,
@@ -111,7 +111,7 @@ const products = [
         description: "Indonesian style fried rice with chicken, prawns, and topped with fried egg",
         price: 1200,
         category: "rice",
-        image: "images/499245128_1265322362156491_9194782666637593265_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_11.jpg"
     },
     {
         id: 14,
@@ -119,7 +119,7 @@ const products = [
         description: "Stir-fried rice with vegetables and chicken in a sweet and savory sauce",
         price: 900,
         category: "rice",
-        image: "images/500706378_1271717854850275_4080909277663704757_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_9.jpg"
     },
     
     // Lunch Packs
@@ -129,7 +129,7 @@ const products = [
         description: "Traditional Sri Lankan rice and curry with chicken and 3 vegetables",
         price: 450,
         category: "lunch",
-        image: "images/492005159_1244147894273938_5930011372659427058_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_20.jpg"
     },
     {
         id: 16,
@@ -137,7 +137,7 @@ const products = [
         description: "Mixed vegetables and chicken stir-fried in soy sauce, served with rice",
         price: 750,
         category: "lunch",
-        image: "images/495570702_1257091352979592_6061647264181732045_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_2.jpg"
     },
     {
         id: 17,
@@ -145,7 +145,7 @@ const products = [
         description: "Fragrant basmati rice cooked with spices and chicken, served with raita",
         price: 800,
         category: "lunch",
-        image: "images/449342083_1009858631036200_307436958771202623_n.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_18.jpg"
     },
     
     // Beverages & Desserts
@@ -155,7 +155,7 @@ const products = [
         description: "Traditional Sri Lankan coconut custard dessert with jaggery and spices",
         price: 300,
         category: "beverages",
-        image: "images/photo/photo-1.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_4.jpg"
     },
     {
         id: 19,
@@ -163,7 +163,7 @@ const products = [
         description: "Rich and creamy chocolate mousse topped with chocolate shavings",
         price: 450,
         category: "beverages",
-        image: "images/photo/photo-2.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_10.jpg"
     },
     {
         id: 20,
@@ -171,7 +171,7 @@ const products = [
         description: "Choice of watermelon, pineapple, papaya, or mixed fruit",
         price: 300,
         category: "beverages",
-        image: "images/photo/photo-3.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_1.jpg"
     },
     {
         id: 21,
@@ -179,7 +179,7 @@ const products = [
         description: "Creamy milkshakes in vanilla, chocolate, strawberry, or coffee flavors",
         price: 450,
         category: "beverages",
-        image: "images/photo/photo-4.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_12.jpg"
     },
     {
         id: 22,
@@ -187,7 +187,7 @@ const products = [
         description: "Traditional Sri Lankan cold dessert drink with rose syrup, basil seeds, and ice cream",
         price: 500,
         category: "beverages",
-        image: "images/cooker-img.jpg"
+        image: "images/orders/PHOTO-2025-07-13-19-41-14_8.jpg"
     }
 ];
 
